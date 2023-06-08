@@ -12,6 +12,8 @@ public class Calculator {
         int sixDivTwo = six / two;
         int fiveMinusTwo = five - two;
         int fourTimeTwo = four * two;
-        System.out.println(String.format("%d\n%d\n%d\n", sixDivTwo, fiveMinusTwo, fourTimeTwo));
+        String separator = System.lineSeparator();
+        System.out.println(String.format("%d%s%d%s%d%s", sixDivTwo, separator, fiveMinusTwo, separator, fourTimeTwo, separator));
+
     }
 }
