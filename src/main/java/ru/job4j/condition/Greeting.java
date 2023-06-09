@@ -8,6 +8,12 @@ public class Greeting {
         int year = 2023;
         idea += year;
         System.out.println(idea);
-
+        char a = 'A';
+        System.out.println(++a);
+        char d = 'D';
+        System.out.println(--d);
+        int i1 = a;
+        int i2 = d;
+        System.out.println(i1 + System.lineSeparator() + i2 + System.lineSeparator() + (i1 + i2));
     }
 }

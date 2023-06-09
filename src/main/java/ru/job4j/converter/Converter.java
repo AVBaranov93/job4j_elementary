@@ -17,6 +17,22 @@ public class Converter {
         return value * 70;
     }
 
+    public static void checkRubleToEuro() {
+        float in = 140;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+    }
+
+    public static void checkRubleToDollar() {
+        float in = 120;
+        float expected = 2;
+        float out = Converter.rubleToDollar(in);
+        boolean passed = expected == out;
+        System.out.println("120 rubles are 2. Test result : " + passed);
+    }
+
     public static void main(String[] args) {
         float euro = Converter.rubleToEuro(140);
         float dollar = Converter.rubleToDollar(180);
@@ -24,5 +40,7 @@ public class Converter {
         System.out.println("180 rubles are " + dollar + " dollar.");
         System.out.println("5 dollars are " + dollarToRuble(5) + " rubles");
         System.out.println("5 euro are " + euroToRuble(5) + " rubles");
+        checkRubleToEuro();
+        checkRubleToDollar();
     }
 }
