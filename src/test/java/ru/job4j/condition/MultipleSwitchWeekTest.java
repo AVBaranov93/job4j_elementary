@@ -15,8 +15,8 @@ class MultipleSwitchWeekTest {
     }
 
     @Test
-    void whenThusdayInEngThe4() {
-        String in = "thusday";
+    void whenThursdayInEngThe4() {
+        String in = "thursday";
         int expected = 4;
         int out = MultipleSwitchWeek.numberOfDay(in);
         assertThat(expected).isEqualTo(out);
