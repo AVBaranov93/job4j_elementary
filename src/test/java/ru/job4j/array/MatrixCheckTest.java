@@ -9,9 +9,9 @@ class MatrixCheckTest {
     @Test
     void whenHasMonoHorizontalThenTrue() {
         char[][] array = new char[][] {
-                {'0', '0', '0'},
+                {' ', ' ', ' '},
                 {'X', 'X', 'X'},
-                {'0', '0', '0'}
+                {' ', ' ', ' '}
         };
         int raw = 1;
         assertThat(MatrixCheck.monoHorizontal(array, raw)).isTrue();
@@ -20,11 +20,12 @@ class MatrixCheckTest {
     @Test
     void whenDoesNotHaveMonoHorizontalThenFalse() {
         char[][] array = new char[][] {
-                {'0', '0', '0'},
-                {'X', '0', 'X'},
-                {'0', 'X', 'X'}
+                {' ', ' ', ' '},
+                {' ', '0', ' '},
+                {'0', ' ', ' '}
         };
         int raw = 1;
         assertThat(MatrixCheck.monoHorizontal(array, raw)).isFalse();
     }
+
 }
