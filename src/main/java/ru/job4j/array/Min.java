@@ -3,8 +3,10 @@ package ru.job4j.array;
 public class Min {
     public static int findMin(int[] array) {
         int min = array[0];
-        for (int value : array) {
-            min = min > value ? value : min;
+        for (int i = 1; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
+            }
         }
         return min;
     }
